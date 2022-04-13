@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:src="@drawable/login"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:fontFamily="@font/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당신 근처의 당근마켓"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:fontFamily="@font/bar_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 동네를 설정하고"
+        android:layout_marginTop="450dp"
+        android:gravity="center"
+        android:textSize="21dp"/>
+    <TextView
+        android:fontFamily="@font/bar_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당근마켓을 시작해보세요"
+        android:layout_marginTop="485dp"
+        android:gravity="center"
+        android:textSize="21dp"/>
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="시작하기"
+        android:textSize="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bar_mid"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#FF8500"/>
+
+</FrameLayout>
