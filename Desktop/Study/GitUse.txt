@@ -1,0 +1,19 @@
+$ git config --global user.name chofame97
+$ git config --global user.email chofame@naver.com
+$ cd C:\HmGit
+$ git clone https://github.com/chofame97/Android.git
+// 바로위에 클론은 해당주소 파일 다가져옴
+git add 파일명 텍스트 파일일 경우 확장자명 까지 써줘야됨
+memo.txt
+
+git commit -m "내용"
+git push
+git clone 주소
+복사 컨 인서트
+붙여넣기 싶 인서트
+
+현재 연결된 저장소 확인
+git remote -v
+
+git status 바뀐파일 확인
+git add . 점찍으면 모든파일 보냄 아니면 파일명
