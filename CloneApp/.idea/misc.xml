@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/drawable/btm_menu_chek.xml" value="0.1855" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.128" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/font/font1.xml" value="0.2947916666666667" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/activity_location.xml" value="0.26458333333333334" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/custom_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/fragment_blank.xml" value="0.36614583333333334" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/fragment_first.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/fragment_home.xml" value="0.2140625" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/fragment_location_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/fragment_main.xml" value="0.33" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/fragment_second.xml" value="0.36614583333333334" />
@@ -25,6 +27,7 @@
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/login_page.xml" value="0.26458333333333334" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/layout/outline_textview.xml" value="0.36614583333333334" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/menu/bottom_menu_s.xml" value="0.2140625" />
         <entry key="..\:/Study_Android/WorkSpace/CloneApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1965" />
         <entry key="..\:/Users/user/Desktop/Android/Android/CloneApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.242" />
         <entry key="..\:/Users/user/Desktop/Android/Android/CloneApp/app/src/main/res/layout/activity_location.xml" value="0.36614583333333334" />

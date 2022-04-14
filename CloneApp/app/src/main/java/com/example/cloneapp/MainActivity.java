@@ -6,10 +6,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,30 +32,31 @@ public class MainActivity extends AppCompatActivity {
         bottom_navi=findViewById(R.id.bottom_navi);
         bottom_navi.setItemIconTintList(null);
         actionBar=getSupportActionBar();
-        actionBar.setTitle("농성동∨ㅇ");
+        actionBar.setTitle("농성동∨");
 
         MainActivity main = new MainActivity();
         changeFragment(new HomeFragment());
+
+
 
         bottom_navi=findViewById(R.id.bottom_navi);
         bottom_navi.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId() == R.id.tab1){
-                    main.iconchange(item);
+
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab2){
-                    main.iconchange(item);
 
                   //  changeFragment(new LifeFragment());
                 }else if(item.getItemId() == R.id.tab3){
-                    main.iconchange(item);
+
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab4){
-                    main.iconchange(item);
+
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab5){
-                    main.iconchange(item);
+
                     changeFragment(new HomeFragment());
                 }else {
 
@@ -85,38 +88,34 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
     }
     public void iconchange(MenuItem item){
+        /*item.setIcon(R.drawable.home);
+        item.setIcon(R.drawable.life);
+        item.setIcon(R.drawable.gps);
+        item.setIcon(R.drawable.chat);
+        item.setIcon(R.drawable.my);
+        */
 
-        if(item.getItemId() == R.id.tab1){
-            item.setIcon(R.drawable.home_s);
-
-            item.setIcon(R.drawable.life);
-            item.setIcon(R.drawable.gps);
-            item.setIcon(R.drawable.chat);
-            item.setIcon(R.drawable.my);
+       /* if(item.getItemId().){
+            tab1.setIcon(R.drawable.home_s);
+            tab2.setIcon(R.drawable.life);
+            tab3.setIcon(R.drawable.gps);
+            tab4.setIcon(R.drawable.chat);
+            tab5.setIcon(R.drawable.my);
         }else if(item.getItemId() == R.id.tab2) {
-            item.setIcon(R.drawable.home);
+
             item.setIcon(R.drawable.life_s);
-            item.setIcon(R.drawable.gps);
-            item.setIcon(R.drawable.chat);
-            item.setIcon(R.drawable.my);
+
         }else if(item.getItemId() == R.id.tab3) {
-            item.setIcon(R.drawable.home);
-            item.setIcon(R.drawable.life);
+
             item.setIcon(R.drawable.gps_s);
-            item.setIcon(R.drawable.chat);
-            item.setIcon(R.drawable.my);
+
         }else if(item.getItemId() == R.id.tab4) {
-            item.setIcon(R.drawable.home);
-            item.setIcon(R.drawable.life);
-            item.setIcon(R.drawable.gps);
+
             item.setIcon(R.drawable.chat_s);
-            item.setIcon(R.drawable.my);
+
         }else if(item.getItemId() == R.id.tab5) {
-            item.setIcon(R.drawable.home);
-            item.setIcon(R.drawable.life);
-            item.setIcon(R.drawable.gps);
-            item.setIcon(R.drawable.chat);
+
             item.setIcon(R.drawable.my_s);
-        }
+        }*/
     }
 }
