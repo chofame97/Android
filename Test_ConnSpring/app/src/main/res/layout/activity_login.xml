@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:orientation="vertical">
+    tools:context=".LoginActivity">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="아이디를 입력"
         android:id="@+id/edt_id"
-        android:hint="아이디를 입력하세요"/>
+        />
+
     <EditText
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:hint="비밀번호를 입력"
         android:id="@+id/edt_pw"
-        android:hint="비밀번호를 입력하세요"/>
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_login"
-        android:text="로그인"/>
+        android:text="로그인"
+        android:layout_marginTop="100dp"
+        />
 
-
-</LinearLayout>
+</FrameLayout>

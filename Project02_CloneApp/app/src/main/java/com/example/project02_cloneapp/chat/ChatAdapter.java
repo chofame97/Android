@@ -42,7 +42,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tv_name.setText(list.get(position).getName());
+        holder.tv_name.setText(list.get(position).getName());//null아님 => 칸마다 들어가는 위젯이연결되있음
         holder.tv_msg.setText(list.get(position).getMsg());
         holder.tv_date.setText(list.get(position).getDate());
         Glide.with(holder.itemview)

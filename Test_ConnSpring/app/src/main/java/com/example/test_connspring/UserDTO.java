@@ -1,12 +1,7 @@
 package com.example.test_connspring;
 
 public class UserDTO {
-    private String id , pw ;
-
-    public UserDTO(String id, String pw) {
-        this.id = id;
-        this.pw = pw;
-    }
+    private String id,pw;
 
     public String getId() {
         return id;

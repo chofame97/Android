@@ -2,7 +2,7 @@ package com.example.last_project.common;
 
 public class AskDTO {
     private String key , value; // AsyncTask실행시 name부분과 text부분을
-                                //유동적으로 사용하고 더 편리하게 사용하기위함.
+    //유동적으로 사용하고 더 편리하게 사용하기위함.
 
     public AskDTO(String key, String value) {
         this.key = key;

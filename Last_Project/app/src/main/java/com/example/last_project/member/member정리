@@ -12,13 +12,8 @@
                 editor.putString("test" , "data"); //test라는 key(name)을 구분자로 두고 data라는 값을 넣음.
                 editor.apply();
 
+
         //데이터 가져오기
             SharedPreferences preferences = getPreferences(LoginActivity.MODE_PRIVATE);
-            edt_id.setText(preferences.getString("test" , "null"));
+                edt_id.setText(preferences.getString("test" , "null"));
 
-        //데이터 지우기
-            editor.remove("key");<=선택삭제
-            editor.clear(); <=전체삭제
-
-  class file for kotlinx.coroutines.Job not found
-  오류 발생시 - 코틀린 파일에 접근을 못하는 경우 나는 오류 ( 코틀린파일을 기본적으로 java에서 열수가없음)

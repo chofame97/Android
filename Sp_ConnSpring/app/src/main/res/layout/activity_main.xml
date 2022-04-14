@@ -5,22 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-  <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-    android:id="@+id/edt_data1"
-      android:hint="스프링으로 전송할 데이터를 입력해주세요."/>
-  <EditText
-      android:layout_marginTop="50dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/edt_data2"
-      android:hint="스프링으로 전송할 데이터를 입력해주세요."/>
-  <Button
-      android:layout_marginTop="100dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/btn"
-      android:text="스프링 연결 테스트"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/edt_data"
+       android:hint="값 1번"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       android:id="@+id/edt_data2"
+       android:hint="값 2번"/>
+   <Button
+       android:id="@+id/btn"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginTop="100dp"
+       android:text="스프링 연결 테스트" />
+
 
 </FrameLayout>

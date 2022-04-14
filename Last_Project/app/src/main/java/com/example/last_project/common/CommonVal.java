@@ -4,11 +4,11 @@ import com.example.last_project.member.MemberVO;
 
 public class CommonVal {
     /*
-    * Date : 2022 / 04 / 11
-    * Create : KYM
-    * Content : 공통으로 사용할 변수를 만듬.
-    * */
-    public static String HTTP_IP = "http://192.168.0.38";
+     * Date : 2022 / 04 / 11
+     * Create : JHM
+     * Content : 공통으로 사용할 변수를 만듬.
+     * */
+    public static String HTTP_IP = "http://192.168.0.47";
     public static String SVRPATH = "/mid/";
     public static MemberVO loginInfo = null; // 해당하는 static멤버가 null이라면 로그인이 안된상태.
     //Spring의 세션과 똑같음 ( == 안드 프로그램 종료시 static메모리에 날아감 )

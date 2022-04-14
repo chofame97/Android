@@ -23,13 +23,13 @@ public class MemberDAO {
     //일반 클래스에서 어떻게하면 Context에 있는 기능을 사용할수가있을까?
     //해당하는 일반 클래스를 생성할때 상위에있는(Context) 객체로부터 받아온다.
 
-//    Context context;
+    //    Context context;
 //    public MemberDAO(Context context) {
 //        this.context = context;
 //    }
     LoginActivity activity; // <= 장점 LoginAcitivity에 있는 모든 위젯을 사용할수있다(!private)
-                            // <= 단점 모든 위젯을 사용할수있지만 LoginActivity를 제외한 다른 액티비티나 프래그먼트
-                            //에서는 사용할수가없다.
+    // <= 단점 모든 위젯을 사용할수있지만 LoginActivity를 제외한 다른 액티비티나 프래그먼트
+    //에서는 사용할수가없다.
     public MemberDAO(LoginActivity activity) {
         this.activity = activity;
     }

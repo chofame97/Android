@@ -12,7 +12,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.project02_cloneapp.chat.ChatFragment;
+import com.example.project02_cloneapp.etcviewpager.EtcFragment;
 import com.example.project02_cloneapp.friend.FriendFragment;
+import com.example.project02_cloneapp.view.ViewFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,10 +50,14 @@ public class MainActivity extends AppCompatActivity {
                     changeFragment(new ChatFragment());
                 }else if(item.getItemId() == R.id.tab3){
                     Log.d(TAG, " 네비게이션 : 뷰 ");
+                    actionBar.setTitle("뷰");
+                    changeFragment(new ViewFragment());
                 }else if(item.getItemId() == R.id.tab4){
                     Log.d(TAG, " 네비게이션 : 쇼핑 ");
                 }else if(item.getItemId() == R.id.tab5){
                     Log.d(TAG, " 네비게이션 : 기타 ");
+                    actionBar.setTitle("기타");
+                    changeFragment(new EtcFragment());
                 }else{
                     return  false;
                 }

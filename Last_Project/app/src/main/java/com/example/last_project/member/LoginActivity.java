@@ -56,10 +56,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         getHashKey();
         NaverIdLoginSDK.INSTANCE.initialize(
-                this,"dPPIq5XGJtg4QU0KlgaZ",
-                "8pNSZEnDCa",
+                this,"5SDNCOUvlYdQ21B19iRX",
+                "9U3kESBt2E",
                 "lastproject");
-        KakaoSdk.init(this,"247d6205dcf6631decbb67cdd4b00880");
+        KakaoSdk.init(this,"62d07f5be004eb80b673acf99e8907a1");
 
         ImageView btn_kakao = findViewById(R.id.btn_kakao);
         // 카카오계정으로 로그인 공통 callback 구성
@@ -73,17 +73,17 @@ public class LoginActivity extends AppCompatActivity {
 //}
         Function2<OAuthToken, Throwable, Unit> callback =
                 new Function2<OAuthToken, Throwable, Unit>() {
-            @Override
-            public Unit invoke(OAuthToken oAuthToken, Throwable throwable) {
-               if(oAuthToken != null){
-                   Log.d(TAG, " 카카오 토큰이 있음 . 로그인 정보를 빼오면 됨");
-                   getKakaoProfile();
-               }else{
-                   Log.d(TAG, " 카카오 토큰이 없음 . " + throwable.toString());
-               }
-               return null;
-            }
-        };
+                    @Override
+                    public Unit invoke(OAuthToken oAuthToken, Throwable throwable) {
+                        if(oAuthToken != null){
+                            Log.d(TAG, " 카카오 토큰이 있음 . 로그인 정보를 빼오면 됨");
+                            getKakaoProfile();
+                        }else{
+                            Log.d(TAG, " 카카오 토큰이 없음 . " + throwable.toString());
+                        }
+                        return null;
+                    }
+                };
         btn_kakao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,21 +161,21 @@ public class LoginActivity extends AppCompatActivity {
     public void getKakaoProfile(){
         // 사용자 정보 요청 (기본)
         UserApiClient.getInstance().me(  (user, throwable) -> {
-           if(throwable != null){
-               Log.d(TAG, " 사용자 정보 요청 실패"+ throwable.toString());
-               //오류가 났을때는 어떤 오류인지를 Kakao에서 제공해줌 . KOE + 숫자
-           }else{
-               // [ { } ] json 구조처럼 바로 데이터가 있는게 아니라 Accuount라는 키로 한칸을 들어감(오브젝트)
-               //그안에서 profile을 얻어 올수가있음.
-               Account account = user.getKakaoAccount();
-               if(account != null){
+            if(throwable != null){
+                Log.d(TAG, " 사용자 정보 요청 실패"+ throwable.toString());
+                //오류가 났을때는 어떤 오류인지를 Kakao에서 제공해줌 . KOE + 숫자
+            }else{
+                // [ { } ] json 구조처럼 바로 데이터가 있는게 아니라 Accuount라는 키로 한칸을 들어감(오브젝트)
+                //그안에서 profile을 얻어 올수가있음.
+                Account account = user.getKakaoAccount();
+                if(account != null){
 
-                   Log.d(TAG, " 사용자 정보 요청 성공 : "+account.getProfile().getNickname());
-                   Log.d(TAG, " 사용자 정보 요청 성공 : "+account.getEmail());
-               }
+                    Log.d(TAG, " 사용자 정보 요청 성공 : "+account.getProfile().getNickname());
+                    Log.d(TAG, " 사용자 정보 요청 성공 : "+account.getEmail());
+                }
 
 
-           }
+            }
 
             return null;
         });
@@ -206,7 +206,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goMain(){ //카카오 , 네이버 , 일반로그인 했을때 메인엑티비티로 이동하게끔처리.
-                         //카카오 , 네이버 로그인 시 회원정보가 x
+        //카카오 , 네이버 로그인 시 회원정보가 x
         Intent intent = new Intent(LoginActivity.this , MainActivity.class);
         startActivity(intent);
     }

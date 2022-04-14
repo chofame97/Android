@@ -14,6 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Last_Project"
         android:usesCleartextTraffic="true">
+
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -32,13 +34,16 @@
 
                 <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
                 <data android:host="oauth"
-                    android:scheme="kakao247d6205dcf6631decbb67cdd4b00880" />
+                    android:scheme="kakao62d07f5be004eb80b673acf99e8907a1" />
             </intent-filter>
         </activity>
 
+
         <activity
-            android:name=".member.LoginActivity"
+          android:name=".member.LoginActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 
 public class AskTask extends AsyncTask<String , String , Integer> {
 
@@ -31,7 +32,7 @@ public class AskTask extends AsyncTask<String , String , Integer> {
     //작업을 완료하고나서 어떤 데이터를 리턴받기위한 타입.
     // protected *Integer*
     final String HTTPIP = "http://192.168.0.38" ;//cmd -> ipconfig로 ip를 확인하고 넣어주기.
-                                                 //  80외에 포트는 :포트번호 넣어주기.
+    //  80외에 포트는 :포트번호 넣어주기.
     final String SVRPATH = "/mid/";             //<-server.xml에 기재된 path
 
     HttpClient httpClient ; //접속을 위한 객체
@@ -39,16 +40,10 @@ public class AskTask extends AsyncTask<String , String , Integer> {
     MultipartEntityBuilder builder ; //파라메터,파일 등등 (여러부분으로 나누어진)보내기위한 객체
     private String postUrl ; //HTTPIP+SVRPATH+Mapping 접속할 매핑주소(스프링)
     private String mapping ; //mapping부분은 매번 달라질수있기때문에 객체생성시
-                             //입력받아서 처리할수있게끔 필드로 만든다.
+    //입력받아서 처리할수있게끔 필드로 만든다.
 
     private String edtData;
     private String edtData2;
-
-    public AskTask(String mapping, String edtData, String edtData2) {
-        this.mapping = mapping;
-        this.edtData = edtData;
-        this.edtData2 = edtData2;
-    }
 
     // String edtData정의 = edt_data.getText().toString()호출
     public AskTask(String mapping, String edtData) {
@@ -56,10 +51,18 @@ public class AskTask extends AsyncTask<String , String , Integer> {
         this.edtData = edtData;
     }
 
+    public AskTask(String mapping, String edtData, String edtData2) {
+        this.mapping = mapping;
+        this.edtData = edtData;
+        this.edtData2 = edtData2;
+    }
+
     public AskTask(String mapping) {
         this.mapping = mapping;
     }
-
+    int num1;
+    int num2;
+    int cnt=0;
     @Override
     protected Integer doInBackground(String... strings) {
         postUrl = HTTPIP + SVRPATH + mapping ; //http://192.168.0.38/mid/???
@@ -67,16 +70,21 @@ public class AskTask extends AsyncTask<String , String , Integer> {
         builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);//웹형태로 요청(Legacy)
         //엔터를 치는 형식으로 URL을 요청하겠다 => www.naver.com
         //===============파라메터를 추가할 부분 ===================
-        // 여기 부분 포문으로 바꿔보기 ↓ ??
-        //Log.d("TAG", "doInBackground: " + edtData + edtData2);
-        builder.addTextBody("paramA", edtData,
-                ContentType.create("Multipart/related" , "UTF-8"));
-        builder.addTextBody("paramB" , edtData2,
-                ContentType.create("Multipart/related" , "UTF-8"));
-        for(int i = Integer.parseInt(edtData) ; i<=Integer.parseInt(edtData2) ; i ++){ //
+       // builder.addTextBody("param" , edtData,
+        //        ContentType.create("Multipart/related" , "UTF-8"));
+       num1 = Integer.parseInt(edtData);
+       num2 = Integer.parseInt(edtData2);
 
-        builder.addTextBody("param"+i , "andSpring"+i,
+        builder.addTextBody("id",edtData,
                 ContentType.create("Multipart/related" , "UTF-8"));
+        builder.addTextBody("edtData2",edtData2,
+                ContentType.create("Multipart/related" , "UTF-8"));
+
+        int cnt=1;
+        for(int i=num1;i<=num2;i++){
+            cnt++;
+            builder.addTextBody("param"+cnt,String.valueOf(i),
+                    ContentType.create("Multipart/related" , "UTF-8"));
         }
         //========================================================= json <= Gson<=
 
@@ -116,7 +124,7 @@ public class AskTask extends AsyncTask<String , String , Integer> {
                 //responsBody<= 응답을 받기때문에
             }
         }catch (IOException e){
-           // e.printStackTrace();
+            // e.printStackTrace();
         }
         return null;
     }

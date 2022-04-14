@@ -26,7 +26,7 @@ public class AskTask extends AsyncTask<String , String , InputStream> {
     MultipartEntityBuilder builder ; //파라메터,파일 등등 (여러부분으로 나누어진)보내기위한 객체
     private String postUrl ; //HTTPIP+SVRPATH+Mapping 접속할 매핑주소(스프링)
     private String mapping ; //mapping부분은 매번 달라질수있기때문에 객체생성시
-                             //입력받아서 처리할수있게끔 필드로 만든다.
+    //입력받아서 처리할수있게끔 필드로 만든다.
     ArrayList<AskDTO> paramList;
 
 

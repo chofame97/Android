@@ -36,3 +36,8 @@ build.gradle(module)여기에 추가하고 반드시 우측 상단에 "sync now"
     -> getItemCount <= onCreateViewHolder를 몇개 만들건지 지정. (초기엔 return 숫자; 를 해줌 )
 -5.RecyclerView에 어댑터와 + LayoutManager연결.
 
+6.ViewPager2
+-리사이클러뷰와 완전히 똑같음.
+- + 디자인쪽에 페이드나 여러 효과를 주는 방법들이 Android Developer에 기재 되어있음
+
+-viewpager의 아이템은 넓이와 높이가 match_parent <=

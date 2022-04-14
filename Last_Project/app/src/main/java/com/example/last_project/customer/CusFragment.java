@@ -34,6 +34,7 @@ public class CusFragment extends Fragment {
                 getContext() , RecyclerView.VERTICAL , false
         );
         recv_cus.setLayoutManager(manager);
+
         swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

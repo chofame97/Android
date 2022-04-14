@@ -15,7 +15,6 @@
         android:id="@+id/container"/>
 
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -23,6 +22,7 @@
         app:menu="@menu/bottom_menu"
         app:itemIconTint="@drawable/btm_nav_color"
         app:itemTextColor="@drawable/btm_nav_color"
+
         />
 
 

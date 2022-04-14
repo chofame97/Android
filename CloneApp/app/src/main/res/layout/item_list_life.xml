@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#979797"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+        <TextView
+
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일상"
+            android:layout_margin="7dp"
+            android:textSize="10dp"/>
+        <TextView
+
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="산책 좋아하시는분 계시나요?~"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+        <TextView
+            android:layout_margin="7dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다랑어.광천동"
+            android:textSize="10dp"/>
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공감하기     댓글 4"
+            android:textSize="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+        <TextView
+
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일상"
+            android:layout_margin="7dp"
+            android:textSize="10dp"/>
+        <TextView
+
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="산책 좋아하시는분 계시나요?~"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+        <TextView
+            android:layout_margin="7dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다랑어.광천동"
+            android:textSize="10dp"/>
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공감하기     댓글 4"
+            android:textSize="10dp"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+        <TextView
+
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일상"
+            android:layout_margin="7dp"
+            android:textSize="10dp"/>
+        <TextView
+
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="산책 좋아하시는분 계시나요?~"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+        <TextView
+            android:layout_margin="7dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다랑어.광천동"
+            android:textSize="10dp"/>
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공감하기     댓글 4"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</LinearLayout>
