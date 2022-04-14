@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/my_img"
+        android:src="@drawable/home"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:fontFamily="@font/bar_mid"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:textSize="25dp"
+        android:id="@+id/my_text"
+        />
+</LinearLayout>

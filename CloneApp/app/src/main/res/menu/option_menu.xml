@@ -17,9 +17,5 @@
         android:icon="@drawable/home"
         android:title="음악"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/menu_etc"
-        android:icon="@drawable/ic_launcher_background"
-        android:title="메뉴"
-        app:showAsAction="always" />
+
 </menu>

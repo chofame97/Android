@@ -15,7 +15,9 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.cloneapp.Life.LifeFragment;
 import com.example.cloneapp.MainView.HomeFragment;
+import com.example.cloneapp.My.MyFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.zip.Inflater;
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         MainActivity main = new MainActivity();
         changeFragment(new HomeFragment());
 
+        MenuItem actionitem;
+        actionitem=findViewById(R.id.menu_music);
 
 
         bottom_navi=findViewById(R.id.bottom_navi);
@@ -44,20 +48,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId() == R.id.tab1){
-
+                    actionBar.setTitle("농성동∨");
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab2){
-
-                  //  changeFragment(new LifeFragment());
+                    if(actionitem.getItemId()==R.id.menu_music){
+                        actionitem.
+                    }
+                    actionBar.setTitle("농성동∨");
+                    changeFragment(new LifeFragment());
                 }else if(item.getItemId() == R.id.tab3){
-
+                    actionBar.setTitle("내 근처");
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab4){
-
+                    actionBar.setTitle("채팅");
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab5){
-
-                    changeFragment(new HomeFragment());
+                    actionBar.setTitle("나의 당근");
+                    changeFragment(new MyFragment());
                 }else {
 
                     return false;
