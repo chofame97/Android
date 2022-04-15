@@ -1,4 +1,4 @@
-package com.example.cloneapp.MainView;
+package com.example.cloneapp.Chat;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,32 +9,30 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.cloneapp.MainView.HomeAdapter;
 import com.example.cloneapp.R;
 
 import java.util.ArrayList;
 
-public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
-
+public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder>{
+    ArrayList<ChatDTO> list;
     LayoutInflater inflater;
-    ArrayList<MemberDTO> list;
 
-    public HomeAdapter(LayoutInflater inflater, ArrayList<MemberDTO> list) {
-        this.inflater = inflater;
+    public ChatAdapter(ArrayList<ChatDTO> list, LayoutInflater inflater) {
         this.list = list;
+        this.inflater = inflater;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(inflater.inflate(R.layout.item_list,parent,false));
+        return new ChatAdapter.ViewHolder(inflater.inflate(R.layout.item_list_chat,parent,false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.title.setText(list.get(position).getTitle());
-        holder.location.setText(list.get(position).getLocation());
-        holder.price.setText(list.get(position).getPrice());
-        holder.imgh.setImageResource(list.get(position).getImg());
+        holder.memo.setText(list.get(position).getMemo());
     }
 
     @Override
@@ -43,15 +41,12 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView title,location,price;
-        ImageView imgh;
+        TextView title,memo;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.title = itemView.findViewById(R.id.title);
-            this.location = itemView.findViewById(R.id.location);
-            this.price = itemView.findViewById(R.id.price);
-            this.imgh = itemView.findViewById(R.id.imgh);
+            this.title = itemView.findViewById(R.id.chat_id);
+            this.memo = itemView.findViewById(R.id.chat_chat);
+
         }
     }
-
 }

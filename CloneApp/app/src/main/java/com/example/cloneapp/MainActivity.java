@@ -7,14 +7,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.cloneapp.Activity.SplashActivity;
+import com.example.cloneapp.Chat.ChatFragment;
 import com.example.cloneapp.Life.LifeFragment;
 import com.example.cloneapp.MainView.HomeFragment;
 import com.example.cloneapp.My.MyFragment;
@@ -31,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+      //  startActivity(new Intent(this, SplashActivity.class));
+
         bottom_navi=findViewById(R.id.bottom_navi);
         bottom_navi.setItemIconTintList(null);
         actionBar=getSupportActionBar();
@@ -51,17 +57,15 @@ public class MainActivity extends AppCompatActivity {
                     actionBar.setTitle("농성동∨");
                     changeFragment(new HomeFragment());
                 }else if(item.getItemId() == R.id.tab2){
-                    if(actionitem.getItemId()==R.id.menu_music){
-                        actionitem.
-                    }
+
                     actionBar.setTitle("농성동∨");
                     changeFragment(new LifeFragment());
                 }else if(item.getItemId() == R.id.tab3){
                     actionBar.setTitle("내 근처");
-                    changeFragment(new HomeFragment());
+                    changeFragment(new LifeFragment());
                 }else if(item.getItemId() == R.id.tab4){
                     actionBar.setTitle("채팅");
-                    changeFragment(new HomeFragment());
+                    changeFragment(new ChatFragment());
                 }else if(item.getItemId() == R.id.tab5){
                     actionBar.setTitle("나의 당근");
                     changeFragment(new MyFragment());
