@@ -1,5 +1,6 @@
 package com.example.cloneapp.Chat;
 
+
 public class ChatDTO {
 
     private String title, memo;
