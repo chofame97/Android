@@ -4,13 +4,12 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-<!--CardView <= 명함모양을 줘서 아이템을 조금 더 깔끔하게 보이게함-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:cardCornerRadius="5dp"
         app:cardUseCompatPadding="true"
-        android:id="@+id/card_cus">
+        android:id="@+id/card_cus1">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,12 +35,12 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="번호 : "
+                        android:text="사번 : "
                         android:textColor="#000"
                         android:gravity="right"
                         android:textSize="15dp"/>
                     <TextView
-                        android:id="@+id/tv_no"
+                        android:id="@+id/emp_no"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -59,16 +58,16 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="고객명 : "
+                        android:text="이름 : "
                         android:textColor="#000"
                         android:gravity="right"
                         android:textSize="15dp"/>
                     <TextView
-                        android:id="@+id/tv_name"
+                        android:id="@+id/name"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="심청"
+                        android:text="제임슨"
                         android:textColor="#000"
                         android:textSize="15dp"/>
                 </LinearLayout>
@@ -82,16 +81,16 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="전화번호 : "
+                        android:text="도시 : "
                         android:textColor="#000"
                         android:gravity="right"
                         android:textSize="15dp"/>
                     <TextView
-                        android:id="@+id/tv_tel"
+                        android:id="@+id/city"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="010-1234-5678"
+                        android:text="서울"
                         android:textColor="#000"
                         android:textSize="15dp"/>
                 </LinearLayout>

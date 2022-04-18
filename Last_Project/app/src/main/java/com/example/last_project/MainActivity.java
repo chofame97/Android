@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.last_project.Employees.EmpFragment;
 import com.example.last_project.common.AskTask;
 import com.example.last_project.common.CommonMethod;
 import com.example.last_project.common.CommonVal;
@@ -26,9 +27,9 @@ import java.util.concurrent.ExecutionException;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "메인" ;
     BottomNavigationView btm_nav;
-    Toolbar toolbar;
-    DrawerLayout drawer;
-    NavigationView nav_view;
+Toolbar toolbar;
+DrawerLayout drawer;
+NavigationView nav_view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this , drawer , toolbar , R.string.navigation_drawer_open ,
+          this , drawer , toolbar , R.string.navigation_drawer_open ,
                 R.string.navigation_drawer_close
         );
         drawer.addDrawerListener(toggle);
@@ -56,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tv_desc =  headerView.findViewById(R.id.tv_desc);
         tv_desc.setText("대충 상세 설명 수정해봄.");
 
-        // 시작하자마자 화면 붙임
         changeFragment(new CusFragment());
+
 
         btm_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -66,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
                     changeFragment(new CusFragment());
                     Log.d(TAG, "menu_cus");
                 }else if(item.getItemId() == R.id.menu_emp){
-                    changeFragment(new CusFragment());
+                    changeFragment(new EmpFragment());
                     Log.d(TAG, "menu_emp");
                 }else if(item.getItemId() == R.id.menu_noti){
-                    changeFragment(new CusFragment());
+                    //Fragment 붙이는 처리
                     Log.d(TAG, "menu_noti");
                 }
                 return true;
@@ -88,8 +89,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    public void  changeFragment(Fragment fragment){
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
-    }
 
+
+    public void changeFragment(Fragment fragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.container , fragment).commit();
+    }
 }

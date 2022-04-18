@@ -14,11 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Last_Project"
         android:usesCleartextTraffic="true">
-        <!-- dilog 형태의 테마를 이용해서 액티비티 띄우기 -->
+        <activity
+            android:name=".Employees.EmpDetailActivity"
+            android:exported="false" />
+        <!-- dilog형태의 테마를 이용해서 액티비티 띄우기 -->
         <activity
             android:name=".customer.CusDetailActivity"
             android:exported="false"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -39,7 +42,7 @@
                 <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
                 <data
                     android:host="oauth"
-                    android:scheme="kakao62d07f5be004eb80b673acf99e8907a1" />
+                    android:scheme="kakao247d6205dcf6631decbb67cdd4b00880" />
             </intent-filter>
         </activity>
         <activity

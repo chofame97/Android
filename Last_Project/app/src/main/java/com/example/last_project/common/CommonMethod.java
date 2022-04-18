@@ -8,11 +8,11 @@ import java.util.concurrent.ExecutionException;
 
 public class CommonMethod {
     //공통으로 사용할 메소드들을 만들어서 사용.<-
-    // static InputStream in= null;
+   // static InputStream in= null;
     public static InputStreamReader executeAskGet(AsyncTask<String , String , InputStream> asktask){
         try {
-            //  in = ;
-            return new InputStreamReader( asktask.execute().get());
+         //  in = ;
+           return new InputStreamReader( asktask.execute().get());
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
