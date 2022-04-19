@@ -57,4 +57,7 @@ dependencies {
 
     /*사진 동그랗게 처리하기 위한 API*/
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation group: 'com.github.bumptech.glide', name: 'glide', version: '4.11.0'
+
 }

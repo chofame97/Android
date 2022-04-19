@@ -14,11 +14,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.last_project.Employees.EmpFragment;
 import com.example.last_project.common.AskTask;
 import com.example.last_project.common.CommonMethod;
 import com.example.last_project.common.CommonVal;
 import com.example.last_project.customer.CusFragment;
+import com.example.last_project.employees.EmpFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 

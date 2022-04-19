@@ -36,8 +36,10 @@ public class CusFragment extends Fragment {
                              Bundle savedInstanceState) {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-        // excute(); <= 어싱크 실행 시 비동기로 작업합
-        // excute().get() <= 어싱크 실행 시 동기로 작업함(완료 될때까지 프로그램이 대기상태)
+        // ↑ 네트워크 오류를 풀어준다.
+        // excute(); <- 어싱크 실행 시 비동기로 작업함
+        // excute().get() <- 어싱크 실행 시 동기로 작업함(완료 될때까지 프로그램이 대기상태)
+
         View v = inflater.inflate(R.layout.fragment_cus, container, false);
         recv_cus  = v.findViewById(R.id.recv_cus);
         swipe  = v.findViewById(R.id.swipe);

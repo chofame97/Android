@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -60,6 +61,13 @@ public class LoginActivity extends AppCompatActivity {
                 "9U3kESBt2E",
                 "lastproject");
         KakaoSdk.init(this,"62d07f5be004eb80b673acf99e8907a1");
+        findViewById(R.id.btn_join).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView btn_kakao = findViewById(R.id.btn_kakao);
         // 카카오계정으로 로그인 공통 callback 구성
