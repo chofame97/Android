@@ -25,7 +25,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.last_project.MainActivity;
 import com.example.last_project.R;
+import com.example.last_project.common.AskTask;
+import com.example.last_project.common.CommonMethod;
 
 import java.io.File;
 import java.io.IOException;
@@ -68,7 +71,15 @@ public class JoinActivity extends AppCompatActivity {
         btn_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                AskTask task = new AskTask("file.f");
+                task.addFileParam("file",imgFilePath); // 실제 이미지 경로를 보냄. Ask new FileBody new File =>
+                task.addParam("id",edt_id.getText().toString());
+                task.addParam("pw",edt_pw.getText().toString());
+                task.addParam("name",edt_name.getText().toString());
+                CommonMethod.executeAskGet(task);
 
+                Intent intent = new Intent(JoinActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
         btn_cancel.setOnClickListener(new View.OnClickListener() {

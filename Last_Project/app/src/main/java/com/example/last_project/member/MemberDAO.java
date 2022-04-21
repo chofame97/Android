@@ -27,13 +27,13 @@ public class MemberDAO {
 //    public MemberDAO(Context context) {
 //        this.context = context;
 //    }
+
     LoginActivity activity; // <= 장점 LoginAcitivity에 있는 모든 위젯을 사용할수있다(!private)
                             // <= 단점 모든 위젯을 사용할수있지만 LoginActivity를 제외한 다른 액티비티나 프래그먼트
                             //에서는 사용할수가없다.
     public MemberDAO(LoginActivity activity) {
         this.activity = activity;
     }
-
     public boolean isMemberLogin(){
         Log.d(TAG, "onClick: ");
         AskTask task = new AskTask("login");

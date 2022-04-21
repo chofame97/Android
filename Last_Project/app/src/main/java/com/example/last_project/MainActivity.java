@@ -12,11 +12,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.last_project.common.AskTask;
 import com.example.last_project.common.CommonMethod;
 import com.example.last_project.common.CommonVal;
+import com.example.last_project.customer.CusDTO;
 import com.example.last_project.customer.CusFragment;
 import com.example.last_project.employees.EmpFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -38,6 +41,7 @@ NavigationView nav_view;
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
 
+
         toolbar = findViewById(R.id.toolbar);
         btm_nav = findViewById(R.id.btm_nav);
         drawer = findViewById(R.id.drawer);
@@ -56,6 +60,12 @@ NavigationView nav_view;
         tv_id.setText(CommonVal.loginInfo.getId());
         TextView tv_desc =  headerView.findViewById(R.id.tv_desc);
         tv_desc.setText("대충 상세 설명 수정해봄.");
+
+        ImageView imgv = headerView.findViewById(R.id.imgv);
+        Glide.with(this)
+                .load(CommonVal.loginInfo.getImg_path())
+                .into(imgv);
+
 
         changeFragment(new CusFragment());
 
