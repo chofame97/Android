@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+    <!--23분까지 자유롭게 .
+        EditText두개 아이디랑 비밀번호 입력받는용도
+        버튼하나 <-로그인버튼
+    -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_margin="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+
+            android:text="개인회원"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:text="기업회원"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#123333"
+            android:id="@+id/container"
+            android:orientation="horizontal" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk_auto"
+            android:text="자동 로그인"
+            android:layout_gravity="right"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:layout_marginTop="240dp"
+            android:text="로그인"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"/>
+
+        <Button
+            android:layout_marginTop="300dp"
+            android:id="@+id/btn_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원 가입" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
