@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <!-- 상단 그림, text 포함 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="자판기 프로그램" />
+
+        <!-- 음료수 사진 & 버튼 가로로 나눔 -->
+        <!--상단-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- 콜라 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/coke"
+                    android:layout_gravity="center|top"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="콜라 800원"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/text_coke"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="10개 남음"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btn_coke"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="주문하기"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout><!-- 콜라 닫음 -->
+
+            <!-- 사이다 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/cider"
+                    android:layout_gravity="center|top"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="사이다 800원"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/text_cider"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="10개 남음"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btn_cider"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="주문하기"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout><!-- 사이다 닫음 -->
+        </LinearLayout>
+
+        <!--하단-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- 환타 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/fanta"
+                    android:layout_gravity="center|top"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="환타 800원"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/text_fanta"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="10개 남음"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btn_fanta"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="주문하기"
+                    android:layout_gravity="center"/>
+                </LinearLayout><!-- 환타 닫음 -->
+
+            <!-- 데미소다 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:src="@drawable/demisoda"
+                        android:layout_gravity="center|top"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="데미소다 800원"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/text_demisoda"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="10개 남음"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <Button
+                        android:id="@+id/btn_demisoda"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="주문하기"
+                        android:layout_gravity="center"/>
+                </LinearLayout><!-- 데미소다 닫음 -->
+        </LinearLayout>
+
+    </LinearLayout><!-- 상단 그림, text 포함 닫음 -->
+
+
+    <!-- 금액입력부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <!-- 금액입력칸 & 잔액 표시 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <!-- 금액입력칸 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+                <EditText
+                    android:id="@+id/text_in"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="40dp"
+                    android:hint="금액을 입력하세요"/>
+            </LinearLayout><!-- 금액입력칸 닫음 -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/text_in2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="잔액 : 0원"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  우측 금액입력 버튼 -->
+
+        <Button
+            android:id="@+id/btn_in"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="금액 입력"/>
+
+    </LinearLayout><!-- 금액입력부분 닫음-->
+
+
+   <!-- 잔돈반환 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="잔돈 반환" />
+    </LinearLayout>
+
+</LinearLayout>

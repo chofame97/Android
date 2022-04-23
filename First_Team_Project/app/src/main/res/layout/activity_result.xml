@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+   >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="자판기 잔돈 교환"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="잔액.."
+        android:id="@+id/text_rs"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="주문 음료 목록"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:id="@+id/rs"
+        android:gravity="center"
+        />
+
+</LinearLayout>
