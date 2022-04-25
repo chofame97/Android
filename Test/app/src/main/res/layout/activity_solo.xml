@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.SoloLoginActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="아이디" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="로그인" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인 상태 유지" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginLeft="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아이디 찾기"/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginLeft="260dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_marginLeft="80dp"
+            android:text="네이버"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+        <Button
+            android:text="카카오"
+            android:layout_marginLeft="240dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

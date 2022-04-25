@@ -10,7 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
+
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.GroupLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.SoloLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.LoginSelectActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

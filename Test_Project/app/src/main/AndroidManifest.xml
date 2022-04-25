@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test_Project">
         <activity
+            android:name=".pageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_page"
+            android:theme="@style/Theme.Test_Project.NoActionBar" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
