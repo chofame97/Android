@@ -30,9 +30,9 @@ import java.util.concurrent.ExecutionException;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "메인" ;
     BottomNavigationView btm_nav;
-Toolbar toolbar;
-DrawerLayout drawer;
-NavigationView nav_view;
+    Toolbar toolbar;
+    DrawerLayout drawer;
+    NavigationView nav_view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
