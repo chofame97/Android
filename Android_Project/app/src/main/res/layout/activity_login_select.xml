@@ -20,15 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_loginGiup"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_round1"
-            android:text="기업회원"/>
+
         <Button
             android:id="@+id/btn_loginSolo"
             android:layout_marginLeft="10dp"
@@ -36,8 +28,18 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_round2"
+            android:background="@drawable/button_round1"
             android:text="개인회원"/>
+
+        <Button
+            android:id="@+id/btn_loginGiup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round2"
+            android:text="기업회원"/>
 
         </LinearLayout>
 

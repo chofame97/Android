@@ -21,6 +21,7 @@ public class LoginGiupFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_login_giup, container, false);
 
+
         rec_giup = view.findViewById(R.id.rec_giup);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(
             getContext(),RecyclerView.VERTICAL,false

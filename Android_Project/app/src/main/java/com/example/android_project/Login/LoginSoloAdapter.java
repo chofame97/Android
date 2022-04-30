@@ -19,7 +19,7 @@ public class LoginSoloAdapter extends RecyclerView.Adapter<LoginSoloAdapter.View
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = inflater.inflate(R.layout.test1 , parent , false);
+        View v = inflater.inflate(R.layout.btn_solo_login, parent , false);
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }

@@ -16,6 +16,10 @@ public class LoginSelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_select);
 
+
+        // 시작하면 개인로그인 플래그먼트 띄움
+        getSupportFragmentManager().beginTransaction().replace(R.id.btn_loginChange,new LoginSoloFragment()).commit();
+
         btn_loginSolo = findViewById(R.id.btn_loginSolo);
         // 개인 로그인 창으로 전환
         btn_loginSolo.setOnClickListener(new View.OnClickListener() {
