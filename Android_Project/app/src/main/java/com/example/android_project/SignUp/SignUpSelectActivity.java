@@ -36,7 +36,7 @@ public class SignUpSelectActivity extends AppCompatActivity {
         });
 
         // 기업회원 가입이동
-        SignUpGiup = findViewById(R.id.SingUpGiup);
+        SignUpGiup = findViewById(R.id.SignUpGiup);
         SignUpGiup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

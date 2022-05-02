@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#64EF92"
             android:text="가입하기"
-            android:id="@+id/SingUpGiup"
+            android:id="@+id/SignUpGiup"
             android:textSize="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"

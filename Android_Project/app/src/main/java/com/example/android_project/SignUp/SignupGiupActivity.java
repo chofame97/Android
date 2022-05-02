@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.android_project.Login.LoginSelectActivity;
 import com.example.android_project.MainActivity;
 import com.example.android_project.R;
 
@@ -23,19 +22,7 @@ public class SignupGiupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup_giup);
-
-        // 가입성공후 메인으로 이동
-        btn_GiupJoin = findViewById(R.id.btn_GiupJoin);
-        btn_GiupJoin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SignupGiupActivity.this, MainActivity.class);
-
-                startActivity(intent);
-            }
-        });
-
+        setContentView(R.layout.activity_sign_up_giup);
 
         btn_join = findViewById(R.id.btn_join);
         edt_id = findViewById(R.id.edt_id);
@@ -47,11 +34,11 @@ public class SignupGiupActivity extends AppCompatActivity {
         edt_email = findViewById(R.id.edt_email);
         edt_addr = findViewById(R.id.edt_addr);
 
-        btn_join.setOnClickListener(new View.OnClickListener() {
+        // 가입성공후 메인으로 이동
+        btn_GiupJoin = findViewById(R.id.btn_GiupJoin);
+        btn_GiupJoin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-
+            public void onClick(View view) {
                 // 아이디 유효성검사
                 if (edt_id.getText().toString().length() == 0) {
                     Toast.makeText(SignupGiupActivity.this, "아이디를 입력하세요", Toast.LENGTH_SHORT).show();
@@ -127,12 +114,19 @@ public class SignupGiupActivity extends AppCompatActivity {
                     return;
                 }
 
-                Intent intent = new Intent(SignupGiupActivity.this, LoginSelectActivity.class);
+
+
+
+
+                Intent intent = new Intent(SignupGiupActivity.this, MainActivity.class);
+
                 startActivity(intent);
                 overridePendingTransition(0, 0);
 
             }
         });
+
+
 
 
     }
