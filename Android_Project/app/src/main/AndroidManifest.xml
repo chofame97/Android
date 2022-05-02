@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/slide_in_top" />
+
         <activity
             android:name=".Login.LoginSelectActivity"
             android:exported="false" />

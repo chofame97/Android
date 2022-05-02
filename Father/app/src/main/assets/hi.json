@@ -1,0 +1,25 @@
+{
+  "survey": {
+    "result": 0,
+    "code": "12348",
+    "url": "http:\/\/m.naver.com"
+  },
+  "notice": {
+    "result": 0,
+    "code": "12349",
+    "url": "http:\/\/m.naver.com"
+  },
+  "speedtest": {
+    "ftp_passwd": "password",
+    "call_setup_time": 10,
+    "call_active_time": 10,
+    "call_number": 1111,
+    "ftp_port": 21,
+    "ftp_id": "userid",
+    "ftp_ip": "192.168.0.1"
+  },
+  "version": {
+    "result": -1,
+    "url": ""
+  }
+}

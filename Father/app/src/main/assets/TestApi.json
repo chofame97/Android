@@ -1,0 +1,29 @@
+{
+  "result" :{
+    "meta": {
+      "obs_post_id": "DT_0001",
+      "obs_post_name": "인천",
+      "obs_lat": "37.451983",
+      "obs_lon": "126.592111",
+      "obs_last_req_cnt":"800/20000"
+    },
+    "data": [
+      {
+        "hl_code": "저조",
+        "tph_time": "2016-01-01 03:02:00",
+        "tph_level": "174"
+      },
+      {
+        "hl_code": "고조",
+        "tph_time": "2016-01-01 08:56:00",
+        "tph_level": "685"
+      },
+      {
+        "hl_code": "저조",
+        "tph_time": "2016-01-01 15:05:00",
+        "tph_level": "183"
+      }
+    ]
+  }
+}
+

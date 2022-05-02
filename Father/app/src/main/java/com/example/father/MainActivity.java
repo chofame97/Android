@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
     String result = "";
     Handler handler = new Handler();
-
+    static String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

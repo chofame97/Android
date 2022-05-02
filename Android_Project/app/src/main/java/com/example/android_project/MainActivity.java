@@ -1,6 +1,5 @@
 package com.example.android_project;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,15 +10,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
+import com.example.android_project.Login.LoginGiupFragment;
 import com.example.android_project.Login.LoginSelectActivity;
+import com.example.android_project.MainMenu.MenuFragment;
 import com.example.android_project.SignUp.SignUpSelectActivity;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     DrawerLayout mainPage;
-
     Button goSign,goLogin;
+
+    ViewFlipper v_fllipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,35 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 사진 슬라이드
+        int[] images = {
+                R.drawable.slide_pic1,
+                R.drawable.slide_pic2,
+                R.drawable.slide_pic3
+        };
+        v_fllipper = findViewById(R.id.mainMidMenu);
+
+        for(int image : images) {
+            fllipperImages(image);
+        }
+
+
+        // 메뉴1
+        getSupportFragmentManager().beginTransaction().replace(R.id.mainMenu1,new MenuFragment()).commit();
+    }
+
+    // 사진 슬라이드 구동동
+    private void fllipperImages(int image) {
+        ImageView imageView = new ImageView(this);
+        imageView.setBackgroundResource(image);
+
+        v_fllipper.addView(imageView);
+        v_fllipper.setFlipInterval(4000);
+        v_fllipper.setAutoStart(true);
+
+        v_fllipper.setInAnimation(this,R.anim.slide_in_right);
+        v_fllipper.setOutAnimation(this,R.anim.slide_out_left);
 
     }
 }

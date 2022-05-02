@@ -3,9 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_login_select.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_main.xml" value="0.365625" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_sign_up_giup.xml" value="0.365625" />
         <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_sign_up_select.xml" value="0.3619791666666667" />
         <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_sign_up_solo.xml" value="0.3619791666666667" />
         <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_signup_giup.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/btn_giup_login.xml" value="0.365625" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/btn_solo_login.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/fragment_login_giup.xml" value="0.365625" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/fragment_login_solo.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/fragment_menu1.xml" value="0.3515625" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/item_main_menu1.xml" value="0.3515625" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/item_main_menu2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/nav_side_header_layout.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/slide_in_topslide_in_top.xml" value="0.35104166666666664" />
+        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/menu/nav_side_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/drawable/btm_menu.xml" value="0.2585" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/drawable/button_round.xml" value="0.215" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/drawable/button_round2.xml" value="0.215" />
