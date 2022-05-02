@@ -17,7 +17,7 @@ import com.example.android_project.R;
 
 public class MenuFragment extends Fragment {
     RecyclerView rec_MainMenu1,rec_MainMenu2;
-
+    ViewFlipper v_fllipper;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,19 +29,23 @@ public class MenuFragment extends Fragment {
         RecyclerView.LayoutManager manager1 = new LinearLayoutManager(
           getContext(),RecyclerView.VERTICAL,false
         );
-        rec_MainMenu1.setLayoutManager(manager1);
+
         MenuAdapter1 adapter1 = new MenuAdapter1(inflater);
         rec_MainMenu1.setAdapter(adapter1);
+        rec_MainMenu1.setLayoutManager(manager1);
 
-        rec_MainMenu2 = view.findViewById(R.id.rec_MainMenu2);
+       rec_MainMenu2 = view.findViewById(R.id.rec_MainMenu2);
         RecyclerView.LayoutManager manager2 = new LinearLayoutManager(
           getContext(),RecyclerView.HORIZONTAL,false
         );
-        rec_MainMenu2.setLayoutManager(manager2);
+
         MenuAdapter2 adapter2 = new MenuAdapter2(inflater);
         rec_MainMenu2.setAdapter(adapter2);
+        rec_MainMenu2.setLayoutManager(manager2);
+
 
         return view;
+
     }
 
 }

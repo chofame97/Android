@@ -33,9 +33,16 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.ar.sceneform:filament-android:1.17.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'  // 동그란 원 만들기
+
+
+    // 사이드 네비바
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
 
     /* 안드로이드와 통신할수 있는 버전 가져오기  */
     implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
@@ -59,5 +66,6 @@ dependencies {
     // https://mvnrepository.com/artifact/com.github.bumptech.glide/glide
     implementation group: 'com.github.bumptech.glide', name: 'glide', version: '4.11.0'
 
-
+    // 당겨서 새로고침
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 }

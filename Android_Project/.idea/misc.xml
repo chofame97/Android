@@ -3,22 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_login_select.xml" value="0.36614583333333334" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_main.xml" value="0.365625" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_sign_up_giup.xml" value="0.365625" />
         <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_sign_up_select.xml" value="0.3619791666666667" />
         <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_sign_up_solo.xml" value="0.3619791666666667" />
         <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/activity_signup_giup.xml" value="0.3619791666666667" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/btn_giup_login.xml" value="0.365625" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/btn_solo_login.xml" value="0.3619791666666667" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/fragment_login_giup.xml" value="0.365625" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/fragment_login_solo.xml" value="0.3619791666666667" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/fragment_menu1.xml" value="0.3515625" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/item_main_menu1.xml" value="0.3515625" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/item_main_menu2.xml" value="0.36614583333333334" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/nav_side_header_layout.xml" value="0.3619791666666667" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/layout/slide_in_topslide_in_top.xml" value="0.35104166666666664" />
-        <entry key="..\:/Study_Android/WorkSpace/Android_Project/app/src/main/res/menu/nav_side_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/admin/Desktop/TeamProject/Android_Project/app/src/main/res/drawable/line.xml" value="0.186" />
+        <entry key="..\:/Users/admin/Desktop/TeamProject/Android_Project/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/admin/Desktop/TeamProject/Android_Project/app/src/main/res/layout/btn_solo_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/admin/Desktop/TeamProject/Android_Project/app/src/main/res/layout/chat_item.xml" value="0.33" />
+        <entry key="..\:/Users/admin/Desktop/TeamProject/Android_Project/app/src/main/res/layout/fragment_chat.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/admin/Desktop/TeamProject/Android_Project/app/src/main/res/layout/fragment_login_giup.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/drawable/btm_menu.xml" value="0.2585" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/drawable/button_round.xml" value="0.215" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/drawable/button_round2.xml" value="0.215" />
@@ -41,6 +34,40 @@
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/menu/nav_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/menu/nav_side_menu.xml" value="0.5" />
         <entry key="..\:/Users/user/Desktop/Android/Android_Project/app/src/main/res/xml/dd.xml" value="0.3619791666666667" />
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/activity_main.xml" value="0.240625" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/btn_giup_login.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/fragment_chat.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/fragment_menu1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/item_main_menu1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/item_main_menu2.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/item_main_menu3.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/layout/nav_side_header_layout.xml" value="0.1921875" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/menu/btm_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/user/Desktop/TeamGit/Android_Project/app/src/main/res/menu/nav_side_menu.xml" value="0.3619791666666667" />
+>>>>>>> main
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/activity_login_select.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/activity_sign_up_giup.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/activity_sign_up_select.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/activity_sign_up_solo.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/activity_splash.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/btn_giup_login.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/btn_solo_login.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/fragment_chat.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/fragment_login_giup.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/fragment_login_solo.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/item_chat.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/layout/nav_side_header_layout.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/menu/btm_menu.xml" value="0.17083333333333334" />
+        <entry key="..\:/teamproject/Android_Project/app/src/main/res/menu/nav_side_menu.xml" value="0.3333333333333333" />
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> main
       </map>
     </option>
   </component>

@@ -26,78 +26,87 @@
                 app:titleTextColor="@color/black"
                 app:popupTheme="@style/Widget.AppCompat.Toolbar"/>
 
-    </com.google.android.material.appbar.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- 메인 내용이 들어갈 곳 (액션바, 바텀네비바 뺀 가운데) -->
-    <LinearLayout
-        android:layout_marginTop="?attr/actionBarSize"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="9">
+        <!-- 메인 내용이 들어갈 곳 (액션바, 바텀네비바 뺀 가운데) -->
         <LinearLayout
+            android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="9"
-            android:id="@+id/container"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-            <!-- 임시로 만든 회원가입, 로그인 버튼 -->
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-               <Button
-                android:id="@+id/goSign"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:text="회원가입" />
-            <Button
-                android:id="@+id/goLogin"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:text="로그인" />
+                android:layout_height="0dp"
+                android:layout_weight="9">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:id="@+id/container"
+                    android:orientation="vertical">
+                    <!-- 임시로 만든 회원가입, 로그인 버튼 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/goSign"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="회원가입" />
+                        <Button
+                            android:id="@+id/goLogin"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="로그인" />
+                        <Button
+                            android:id="@+id/hide"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="로그인 됨" />
+                        <Button
+                            android:id="@+id/watch"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="로그아웃 됨" />
+
+                    </LinearLayout>
+
+                    <!-- 사진 슬라이드, 메뉴 -->
+                    <LinearLayout
+                        android:id="@+id/mainImageSlide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ViewFlipper
+                            android:id="@+id/mainMidMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"/>
+                        <!-- 일단 대충 넣는 메뉴 -->
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mainMenu1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
 
 
-            </LinearLayout>
-
-            <!-- 사진 슬라이드, 메뉴 -->
-            <LinearLayout
-                android:id="@+id/mainImageSlide"
+            <!-- labelVisibilityMode  아래 메뉴 텍스트 계속 보이게함 -->
+            <!-- 하단 메뉴 -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/btm_nav"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ViewFlipper
-                    android:id="@+id/mainMidMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
-                <!-- 일단 대충 넣는 메뉴 -->
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/mainMenu1"/>
-
-            </LinearLayout>
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:menu="@menu/btm_menu"
+                app:itemIconTint="#172B2B"
+                app:labelVisibilityMode="labeled"
+                app:itemTextColor="#000000"
+                android:background="@color/white"/>
         </LinearLayout>
-        </ScrollView>
-
-
-        <!-- labelVisibilityMode  아래 메뉴 텍스트 계속 보이게함 -->
-        <!-- 하단 메뉴 -->
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/btm_nav"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:menu="@menu/btm_menu"
-            app:itemIconTint="#172B2B"
-            app:labelVisibilityMode="labeled"
-            app:itemTextColor="#000000"
-            android:background="@color/white"/>
-    </LinearLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
