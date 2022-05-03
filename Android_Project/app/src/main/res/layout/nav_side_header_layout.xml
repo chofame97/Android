@@ -5,28 +5,63 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Light"
-    android:background="#112233"
+    android:background="#DCD66D"
     android:padding="10dp"
     android:fitsSystemWindows="true">
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_marginTop="10dp"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/img_profile"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_marginLeft="20dp"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
-    <TextView
+
+    <!-- 로그인 상태 -->
+    <LinearLayout
+        android:id="@+id/loginh"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv1"
-        android:text="~~ 님 안녕하세요"
-        android:layout_marginLeft="20dp"
-        android:textColor="#ffffff"
-        android:paddingTop="15dp"
-        android:layout_marginBottom="10dp"/>
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:text="~~ 님 안녕하세요"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
 
+    <!-- 로그아웃 상태 -->
+    <LinearLayout
+        android:id="@+id/logouth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_profile1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv11"
+            android:text="로그인을 해주세요"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
 
 </LinearLayout>

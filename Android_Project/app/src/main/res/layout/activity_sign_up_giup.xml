@@ -217,6 +217,6 @@
         android:layout_margin="10dp"
         android:background="#4ECC6B"
         android:layout_gravity="center"
-        android:id="@+id/btn_GiupJoin" />
+        android:id="@+id/btn_Signup" />
 
 </LinearLayout>

@@ -46,6 +46,7 @@
                     android:orientation="vertical">
                     <!-- 임시로 만든 회원가입, 로그인 버튼 -->
                     <LinearLayout
+                        android:id="@+id/btn_top"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
@@ -69,6 +70,11 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:text="로그아웃 됨" />
+                        <TextView
+                            android:id="@+id/Use_Api"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="내용"/>
 
                     </LinearLayout>
 
@@ -114,7 +120,7 @@
     <!-- 사이드메뉴 -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"

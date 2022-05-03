@@ -11,12 +11,13 @@ import android.widget.Toast;
 
 import com.example.android_project.MainActivity;
 import com.example.android_project.R;
+import com.example.android_project.TestActivity;
 
 import java.util.regex.Pattern;
 
 
 public class SignupGiupActivity extends AppCompatActivity {
-    Button btn_GiupJoin;
+    Button btn_Signup;
     Button btn_join;
     EditText edt_id, edt_pw, edt_pw_chk, edt_name, edt_birth, edt_email, edt_phn, edt_addr;
     @Override
@@ -35,10 +36,11 @@ public class SignupGiupActivity extends AppCompatActivity {
         edt_addr = findViewById(R.id.edt_addr);
 
         // 가입성공후 메인으로 이동
-        btn_GiupJoin = findViewById(R.id.btn_GiupJoin);
-        btn_GiupJoin.setOnClickListener(new View.OnClickListener() {
+        btn_Signup = findViewById(R.id.btn_Signup);
+        btn_Signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+               /*
                 // 아이디 유효성검사
                 if (edt_id.getText().toString().length() == 0) {
                     Toast.makeText(SignupGiupActivity.this, "아이디를 입력하세요", Toast.LENGTH_SHORT).show();
@@ -113,12 +115,12 @@ public class SignupGiupActivity extends AppCompatActivity {
                     edt_name.requestFocus();
                     return;
                 }
+                 */
 
 
 
 
-
-                Intent intent = new Intent(SignupGiupActivity.this, MainActivity.class);
+                Intent intent = new Intent(SignupGiupActivity.this, TestActivity.class);
 
                 startActivity(intent);
                 overridePendingTransition(0, 0);
