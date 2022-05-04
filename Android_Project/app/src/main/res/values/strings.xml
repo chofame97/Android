@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Project</string>
-    <string name="navigation_mainPage_open">Open side navigation</string>
-    <string name="navigation_mainPage_close">Close side navigation</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
