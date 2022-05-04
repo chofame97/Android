@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp.SignUpSelectActivity"
+    android:orientation="vertical">
+
+    <!-- 맨위에 회원가입으로 가기버튼, 개인회원 가입 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFEC5F">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFEC5F"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="뒤로가기"
+                android:id="@+id/goSelectSignUp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/solo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="개인회원"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알바 대타를 하고싶은분"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFE638"
+            android:text="가입하기"
+            android:id="@+id/SignUpSolo"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_marginLeft="70dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_naver"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="네이버"/>
+
+            <Button
+                android:layout_marginLeft="40dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_kakao"/>
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="카카오"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 기업 회원가입 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/giup"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기업회원"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알바 대타를 찾는분(사업자 등록번호)"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#64EF92"
+            android:text="가입하기"
+            android:id="@+id/SignUpGiup"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

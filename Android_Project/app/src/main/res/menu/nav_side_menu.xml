@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_side_item_profile"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="프로필"/>
+        <item
+            android:id="@+id/nav_side_item_menu3"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="이력서 등록"/>
+        <item
+            android:id="@+id/nav_side_menu1"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="환경설정"/>
+        <item
+            android:id="@+id/nav_side_menu2"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="menu2"/>
+    </group>
+    <item
+        android:id="@+id/nav_side_notLogin"
+        android:title="로그인을 하고 알알이가 되어보세요"
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@android:drawable/ic_menu_call"
+                android:title="로그인"/>
+            <item
+                android:id="@+id/nav_signup"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="회원가입"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_side_login"
+        android:visible="true"
+        android:title="회원정보">
+        <menu>
+            <item
+                android:id="@+id/nav_side_item_logout"
+                android:icon="@android:drawable/ic_menu_call"
+                android:title="로그아웃"/>
+            <item
+                android:id="@+id/nav_side_item_out"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="회원탈퇴"/>
+        </menu>
+    </item>
+
+</menu>
