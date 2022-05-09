@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edt_data = findViewById(R.id.edt_data);
-//        edt_data2 = findViewById(R.id.edt_data2);
+        edt_data2 = findViewById(R.id.edt_data2);
 
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override

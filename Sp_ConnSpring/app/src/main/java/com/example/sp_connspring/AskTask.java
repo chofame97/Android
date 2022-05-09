@@ -31,9 +31,9 @@ public class AskTask extends AsyncTask<String , String , Integer> {
     //3.Result ※
     //작업을 완료하고나서 어떤 데이터를 리턴받기위한 타입.
     // protected *Integer*
-    final String HTTPIP = "http://192.168.0.38" ;//cmd -> ipconfig로 ip를 확인하고 넣어주기.
+    final String HTTPIP = "http://192.168.200.100" ;//cmd -> ipconfig로 ip를 확인하고 넣어주기.
     //  80외에 포트는 :포트번호 넣어주기.
-    final String SVRPATH = "/mid/";             //<-server.xml에 기재된 path
+    final String SVRPATH = "/erjr/";             //<-server.xml에 기재된 path
 
     HttpClient httpClient ; //접속을 위한 객체
     HttpPost httpPost ;     //접속방식을 POST
@@ -77,15 +77,15 @@ public class AskTask extends AsyncTask<String , String , Integer> {
 
         builder.addTextBody("id",edtData,
                 ContentType.create("Multipart/related" , "UTF-8"));
-        builder.addTextBody("edtData2",edtData2,
+       builder.addTextBody("id2",edtData2,
                 ContentType.create("Multipart/related" , "UTF-8"));
 
-        int cnt=1;
+        /*int cnt=1;
         for(int i=num1;i<=num2;i++){
             cnt++;
             builder.addTextBody("param"+cnt,String.valueOf(i),
                     ContentType.create("Multipart/related" , "UTF-8"));
-        }
+        }*/
         //========================================================= json <= Gson<=
 
 
