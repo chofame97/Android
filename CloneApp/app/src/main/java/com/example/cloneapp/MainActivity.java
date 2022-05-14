@@ -98,35 +98,6 @@ public class MainActivity extends AppCompatActivity {
     public void  changeFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
     }
-    public void iconchange(MenuItem item){
-        /*item.setIcon(R.drawable.home);
-        item.setIcon(R.drawable.life);
-        item.setIcon(R.drawable.gps);
-        item.setIcon(R.drawable.chat);
-        item.setIcon(R.drawable.my);
-        */
 
-       /* if(item.getItemId().){
-            tab1.setIcon(R.drawable.home_s);
-            tab2.setIcon(R.drawable.life);
-            tab3.setIcon(R.drawable.gps);
-            tab4.setIcon(R.drawable.chat);
-            tab5.setIcon(R.drawable.my);
-        }else if(item.getItemId() == R.id.tab2) {
 
-            item.setIcon(R.drawable.life_s);
-
-        }else if(item.getItemId() == R.id.tab3) {
-
-            item.setIcon(R.drawable.gps_s);
-
-        }else if(item.getItemId() == R.id.tab4) {
-
-            item.setIcon(R.drawable.chat_s);
-
-        }else if(item.getItemId() == R.id.tab5) {
-
-            item.setIcon(R.drawable.my_s);
-        }*/
-    }
 }
