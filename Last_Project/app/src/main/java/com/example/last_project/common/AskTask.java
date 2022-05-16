@@ -1,13 +1,12 @@
 package com.example.last_project.common;
 
-import android.net.http.AndroidHttpClient;
+
 import android.os.AsyncTask;
-import android.util.Log;
 
-import com.google.gson.Gson;
 
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
+
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
@@ -16,7 +15,6 @@ import org.apache.http.entity.mime.content.FileBody;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class AskTask extends AsyncTask<String , String , InputStream> {

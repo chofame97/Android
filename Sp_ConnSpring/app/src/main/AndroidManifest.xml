@@ -23,7 +23,6 @@
         <!-- 3.http 요청가능핞 lib 를 사용주인 어플의것을 기재 (사용할것) -->
         <uses-library android:name="org.apache.http.legacy"
             android:required="false"/>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
