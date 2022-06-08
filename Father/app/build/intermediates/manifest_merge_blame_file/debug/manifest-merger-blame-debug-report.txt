@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.father"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:8:5-28:19
+15        android:allowBackup="true"
+15-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] C:\Users\admin\.gradle\caches\transforms-3\b9e4376e452ce4f1a2bbb1fc4b534124\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.Father" >
+23-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:14:9-44
+24        <activity
+24-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:15:9-18:40
+25            android:name="com.example.father.MainActivity"
+25-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:17:13-41
+26            android:exported="false" />
+26-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:18:13-37
+27        <activity
+27-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:19:9-27:20
+28            android:name="com.example.father.MainActivity2"
+28-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:20:13-42
+29            android:exported="true" >
+29-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:21:13-36
+30            <intent-filter>
+30-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:22:13-26:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:23:17-69
+31-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:23:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:25:17-77
+33-->D:\Study_Android\WorkSpace\Father\app\src\main\AndroidManifest.xml:25:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+39            android:authorities="com.example.father.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\admin\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+44            <meta-data
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\admin\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\admin\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+46                android:value="androidx.startup" />
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\admin\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+47        </provider>
+48    </application>
+49
+50</manifest>

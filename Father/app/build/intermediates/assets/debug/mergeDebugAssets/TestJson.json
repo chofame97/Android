@@ -1,0 +1,23 @@
+{ "Movies" : [
+  {
+    "title" : "미션임파서블",
+    "grade" : "15세 관람가",
+    "category" : "액션"
+  },
+  {
+    "title" : "어벤져스",
+    "grade" : "12세 관람가",
+    "category" : "액션"
+  },
+  {
+    "title" : "범죄도시",
+    "grade" : "19세 관람가",
+    "category" : "범죄/스릴러"
+  },
+  {
+    "title" : "",
+    "grade" : "",
+    "category" : ""
+  }
+]
+}
